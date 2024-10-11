@@ -72,7 +72,7 @@ func process(id int, wg *sync.WaitGroup) {
 		ID: id,
 	}
 	credential := common.NewCredential(SecretID, SecretKey)
-	synthesizer := tts.NewSpeechSynthesizer(int64(AppID), credential, listener)
+	synthesizer := tts.NewSpeechWSv2Synthesizer(int64(AppID), credential, listener)
 	synthesizer.VoiceType = 101000
 	text := "语音合成可自定义音量和语速，让发音更自然、更专业、更符合场景需求。满足将文本转化成拟人化语音的需求，打通人机交互闭环。支持多种音色选择，语音合成可广泛应用于语音导航、有声读物、机器人、语音助手、自动新闻播报等场景，提升人机交互体验，提高语音类应用构建效率。"
 	synthesizer.ProxyURL = proxyURL
