@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tencentcloud/tencentcloud-speech-sdk-go/common"
-	"github.com/tencentcloud/tencentcloud-speech-sdk-go/tts"
+	"github.com/showntop/tencentcloud-speech-sdk-go/common"
+	"github.com/showntop/tencentcloud-speech-sdk-go/tts"
 )
 
 var (

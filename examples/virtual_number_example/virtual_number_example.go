@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/tencentcloud/tencentcloud-speech-sdk-go/asr"
-	"github.com/tencentcloud/tencentcloud-speech-sdk-go/common"
+	"github.com/showntop/tencentcloud-speech-sdk-go/asr"
+	"github.com/showntop/tencentcloud-speech-sdk-go/common"
 	"os"
 	"sync"
 	"time"

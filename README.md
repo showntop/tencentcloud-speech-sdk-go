@@ -14,8 +14,8 @@
 
 推荐使用语言自带的工具安装 SDK ：
 
-    go get github.com/tencentcloud/tencentcloud-speech-sdk-go@latest
+    go get github.com/showntop/tencentcloud-speech-sdk-go@latest
 
 # 示例
 
-参见 [examples](https://github.com/TencentCloud/tencentcloud-speech-sdk-go/tree/master/examples) 目录，该目录下包含各语音服务的示例代码。
+参见 [examples](https://github.com/showntop/tencentcloud-speech-sdk-go/tree/master/examples) 目录，该目录下包含各语音服务的示例代码。

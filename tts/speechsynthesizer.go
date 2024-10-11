@@ -18,7 +18,7 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/tencentcloud/tencentcloud-speech-sdk-go/common"
+	"github.com/showntop/tencentcloud-speech-sdk-go/common"
 )
 
 // SpeechSynthesisResponse SpeechSynthesisResponse

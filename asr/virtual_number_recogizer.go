@@ -7,7 +7,7 @@ import (
 	"encoding/base64"
 	"encoding/json"
 	"fmt"
-	"github.com/tencentcloud/tencentcloud-speech-sdk-go/common"
+	"github.com/showntop/tencentcloud-speech-sdk-go/common"
 	"net/http"
 	"net/url"
 	"runtime/debug"

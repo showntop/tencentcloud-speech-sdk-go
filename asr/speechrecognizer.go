@@ -18,7 +18,7 @@ import (
 	"github.com/google/uuid"
 	"github.com/gorilla/websocket"
 
-	"github.com/tencentcloud/tencentcloud-speech-sdk-go/common"
+	"github.com/showntop/tencentcloud-speech-sdk-go/common"
 )
 
 // SpeechRecognitionListener User must impletement it. Get recognition result
@@ -91,7 +91,7 @@ type SpeechRecognizer struct {
 	ReinforceHotword  int
 	NoiseThreshold    float64
 	FilterEmptyResult int
-	MaxSpeakTime	  int
+	MaxSpeakTime      int
 
 	Credential *common.Credential
 	//listener
@@ -442,7 +442,7 @@ func (recognizer *SpeechRecognizer) buildURL(voiceID string) string {
 	queryMap["convert_num_mode"] = strconv.FormatInt(int64(recognizer.ConvertNumMode), 10)
 	queryMap["word_info"] = strconv.FormatInt(int64(recognizer.WordInfo), 10)
 	queryMap["reinforce_hotword"] = strconv.FormatInt(int64(recognizer.ReinforceHotword), 10)
-	queryMap["max_speak_time"] = strconv.FormatInt(int64(recognizer.MaxSpeakTime),10)
+	queryMap["max_speak_time"] = strconv.FormatInt(int64(recognizer.MaxSpeakTime), 10)
 	if recognizer.VadSilenceTime > 0 {
 		queryMap["vad_silence_time"] = strconv.FormatInt(int64(recognizer.VadSilenceTime), 10)
 	}

@@ -14,4 +14,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added asr and tts sdk.
 - Added sdk examples.
 
-[1.0.0]: https://github.com/TencentCloud/tencentcloud-speech-sdk-go/releases/tag/1.0.0
+[1.0.0]: https://github.com/showntop/tencentcloud-speech-sdk-go/releases/tag/1.0.0
