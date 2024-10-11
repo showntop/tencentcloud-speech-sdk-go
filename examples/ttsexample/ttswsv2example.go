@@ -59,9 +59,9 @@ func main() {
 func processWs(id int, wg *sync.WaitGroup) {
 	defer wg.Done()
 	//在腾讯云控制台账号信息页面查看账号APPID，访问管理页面获取 SecretID 和 SecretKey 。
-	secretID := "AKIDc7QULyhRzOwQEqEMhxDKCqGfvPkutiOu"
-	secretKey := "ax74oMjvwlOsAF7mEUZTEoBJG1bx8Azb"
-	AppID := 1252214184 //替换为自己的appid
+	secretID := ""
+	secretKey := ""
+	AppID := 0 //替换为自己的appid
 
 	sessionId := fmt.Sprintf("%s_%s", strconv.Itoa(id), uuid.New().String())
 	listener := &MySpeechWsv2SynthesisListener{Data: make([]byte, 0), SessionId: sessionId}
