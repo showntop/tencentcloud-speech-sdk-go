@@ -244,6 +244,15 @@ func (synthesizer *SpeechWsv2Synthesizer) Send(chunk string) error {
 	})
 }
 
+func (synthesizer *SpeechWsv2Synthesizer) Complete() error {
+	return synthesizer.conn.WriteJSON(map[string]interface{}{
+		"session_id": synthesizer.SessionId,
+		"message_id": uuid.New().String(),
+		"action":     "ACTION_COMPLETE",
+		"data":       "",
+	})
+}
+
 func (synthesizer *SpeechWsv2Synthesizer) receive() {
 	defer func() {
 		// handle panic
